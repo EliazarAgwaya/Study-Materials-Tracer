@@ -3,8 +3,12 @@ import EachMaterial from "./EachMaterial"
 function Materials (){
     return(
         <div>
-            <p>My list</p>
+            <h5>Search here by book title to find a book you are looking for:</h5>
             <SearchBar/>
+
+            <u>
+                <h1>Study Materials</h1>
+            </u>
         </div>
     )
 }
