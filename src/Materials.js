@@ -1,4 +1,5 @@
 import SearchBar from "./SearchBar"
+import EachMaterial from "./EachMaterial"
 function Materials (){
     return(
         <div>

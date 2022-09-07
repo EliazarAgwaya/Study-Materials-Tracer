@@ -11,6 +11,7 @@ function App() {
       <Home/>
       <h2>I am trying</h2>
       <Materials/>
+      <Form/>
     </div>
   );
 }
