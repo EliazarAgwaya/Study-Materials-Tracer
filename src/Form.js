@@ -1,5 +1,16 @@
-import React from "react"
- function Form (){
+import React,{useState} from "react"
+ function Form (addMaterial){
+    const [newMaterial, setNewMaterial] = useState({
+        name: "",
+        source: "",
+        likes: 0,
+      });
+
+      function handleChange (event) {
+        const name=event.target.name;
+        const value= event.target.value;
+        setNewMaterial({...newMaterial, [name]: value})
+      }
     return(
         <div>
             <form>
@@ -9,14 +20,16 @@ import React from "react"
                 type="text"
                 placeholder="Material name"
                 name="name"
-                value="Material"
+                value={newMaterial.name}
+                onChange={handleChange}
                 ></input>
                 <br />
                 <input
                 type="text"
                 placeholder="Enter Source"
-                name="Source"
-                value="Source"
+                name="source"
+                value={newMaterial.source}
+                onChange={handleChange}
                 ></input>
                 <br />
 

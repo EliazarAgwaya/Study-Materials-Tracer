@@ -18,7 +18,12 @@ function App() {
       .then((data) => {
         setMaterials(data)
       })
-  })
+  },[]);
+
+  function addMaterial (newMaterial) {
+    const updatedMaterials = [newMaterial, ...materials]
+    setMaterials(updatedMaterials)
+  }
 
   const materialsToDisplay = materials.filter((material) => {
     return material.name.toLowerCase().includes(searchTerm.toLowerCase());
@@ -30,7 +35,8 @@ function App() {
         <Route exact path="/materials" element={<Materials 
           materials ={materials}
           materialsToDisplay={materialsToDisplay}/>} />
-        <Route exact path="/form" element={<Form/>} />
+        <Route exact path="/form" element={<Form 
+          addMaterial ={addMaterial}/>} />
         <Route exact path="/" element={<Home/>} />
       </Routes>
     </div>
