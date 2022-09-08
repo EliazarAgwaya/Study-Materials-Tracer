@@ -1,6 +1,12 @@
 import SearchBar from "./SearchBar"
 import EachMaterial from "./EachMaterial"
-function Materials (){
+function Materials ({materialsToDisplay}){
+    const materialList = materialsToDisplay.map((material) =>(
+        <EachMaterial 
+            key={material.id}
+            material={material}/>
+    ))
+    
     return(
         <div>
             <h5>Search here by book title to find a book you are looking for:</h5>
@@ -9,6 +15,7 @@ function Materials (){
             <u>
                 <h1>Study Materials</h1>
             </u>
+            {materialList}
         </div>
     )
 }
