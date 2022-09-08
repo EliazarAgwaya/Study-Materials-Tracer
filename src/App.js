@@ -10,6 +10,7 @@ import { Route, Routes } from "react-router-dom";
 function App() {
 
   const [materials, setMaterials] =useState([]);
+  const [comments, setComments] = useState([])
   const [searchTerm, setSearchTerm] = useState("");
 
   useEffect(() => {
@@ -25,6 +26,12 @@ function App() {
     setMaterials(updatedMaterials)
   }
 
+  function addComment(newComment) {
+    const materialToReview = materials.find((material) => {
+      return material.id === newComment.material_id
+    })
+  }
+
   const materialsToDisplay = materials.filter((material) => {
     return material.name.toLowerCase().includes(searchTerm.toLowerCase());
   });
@@ -34,7 +41,8 @@ function App() {
       <Routes>
         <Route exact path="/materials" element={<Materials 
           materials ={materials}
-          materialsToDisplay={materialsToDisplay}/>} />
+          materialsToDisplay={materialsToDisplay}/>} 
+          addComment ={addComment}/>
         <Route exact path="/form" element={<Form 
           addMaterial ={addMaterial}/>} />
         <Route exact path="/" element={<Home/>} />
