@@ -37,6 +37,13 @@ function App() {
     setComments(updatedComments)
   }
 
+  function handleLikes(likes) {
+    const updatedLikes = materials.map((material) => {
+      return material.id === likes.id ? likes : material
+    })
+    setMaterials(updatedLikes)
+  }
+
   function handleDeleteComment (deletedComment) {
     const materialToUpdate = materials.find((material) => {
       return material.id === deletedComment.material_id
@@ -60,7 +67,8 @@ function App() {
       <Routes>
         <Route exact path="/materials" element={<Materials 
           materials ={materials}
-          materialsToDisplay={materialsToDisplay}/>} 
+          materialsToDisplay={materialsToDisplay} 
+          handleLikes ={handleLikes}/>} 
           addComment ={addComment} handleDeleteComment={handleDeleteComment} 
           comments = {comments}/>
         <Route exact path="/form" element={<Form 
