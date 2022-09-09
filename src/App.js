@@ -32,6 +32,20 @@ function App() {
     })
   }
 
+  function handleDeleteComment (deletedComment) {
+    const materialToUpdate = materials.find((material) => {
+      return material.id === deletedComment.material_id
+    })
+
+    const updatedMaterial = materialToUpdate.materials.filter((material) => {
+      return material.id !==deletedComment.id
+    })
+
+    materialToUpdate.materials = updatedMaterial;
+    setMaterials(materials.map((material) =>(material.id === materialToUpdate.id ? materialToUpdate : material)))
+    setMaterials(updatedMaterial)
+  }
+
   const materialsToDisplay = materials.filter((material) => {
     return material.name.toLowerCase().includes(searchTerm.toLowerCase());
   });
@@ -42,7 +56,7 @@ function App() {
         <Route exact path="/materials" element={<Materials 
           materials ={materials}
           materialsToDisplay={materialsToDisplay}/>} 
-          addComment ={addComment}/>
+          addComment ={addComment} handleDeleteComment={handleDeleteComment}/>
         <Route exact path="/form" element={<Form 
           addMaterial ={addMaterial}/>} />
         <Route exact path="/" element={<Home/>} />
