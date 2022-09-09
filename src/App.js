@@ -30,6 +30,11 @@ function App() {
     const materialToReview = materials.find((material) => {
       return material.id === newComment.material_id
     })
+
+    const updatedComments = [newComment, ...materialToUpdate.comments];
+    materialToUpdate.materials = updatedComments;
+    setMaterials(materials.map((material) => (material.id === materialToUpdate.id ? materialToUpdate : material)));
+    setComments(updatedComments)
   }
 
   function handleDeleteComment (deletedComment) {
