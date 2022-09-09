@@ -1,11 +1,13 @@
 import SearchBar from "./SearchBar"
 import EachMaterial from "./EachMaterial"
-function Materials ({materialsToDisplay, addComment, handleDeleteComment}){
+function Materials ({materialsToDisplay, addComment, handleDeleteComment, comments}){
     const materialList = materialsToDisplay.map((material) =>(
         <EachMaterial 
             key={material.id}
             material={material}
-            addComment={addComment}/>
+            addComment={addComment}
+            comments ={comments}
+            handleDeleteComment ={handleDeleteComment}/>
     ))
     
     return(

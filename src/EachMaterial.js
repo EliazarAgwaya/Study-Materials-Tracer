@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import AddingComment from "./AddingComment"
 
-function EachMaterial ({material, addComment}) {
+function EachMaterial ({material, addComment, handleDeleteComment}) {
 
     const [displayComment, setDisplayComment] =useState(false)
 
@@ -10,10 +10,21 @@ function EachMaterial ({material, addComment}) {
         setDisplayComment(!displayComment)
     }
 
+    function deleteComment(id) {
+      fetch(`http://localhost:9292/comments/${id}`, {
+        method: "DELETE",
+        headers: {
+          "Content-Type": "application/json"
+        },
+      })
+        .then((res) => res.json())
+        .then((data) => handleDeleteComment(data));
+    }
+
     const eachComment = material.comments?.map((comment) => (
         <li key={material.id}>
           {/* <br /> */}
-          <button>
+          <button onClick={() => deleteComment(comment.id)}>
             ✖{" "}
           </button>
           {comment.text}
