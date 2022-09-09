@@ -10,7 +10,7 @@ import { Route, Routes } from "react-router-dom";
 function App() {
 
   const [materials, setMaterials] =useState([]);
-  // const [comments, setComments] = useState([])
+  const [comments, setComments] = useState([])
   const [searchTerm, setSearchTerm] = useState("");
 
   useEffect(() => {
@@ -56,7 +56,8 @@ function App() {
         <Route exact path="/materials" element={<Materials 
           materials ={materials}
           materialsToDisplay={materialsToDisplay}/>} 
-          addComment ={addComment} handleDeleteComment={handleDeleteComment}/>
+          addComment ={addComment} handleDeleteComment={handleDeleteComment} 
+          comments = {comments}/>
         <Route exact path="/form" element={<Form 
           addMaterial ={addMaterial}/>} />
         <Route exact path="/" element={<Home/>} />
