@@ -27,7 +27,7 @@ function App() {
   }
 
   function addComment(newComment) {
-    const materialToReview = materials.find((material) => {
+    const materialToUpdate = materials.find((material) => {
       return material.id === newComment.material_id
     })
 
