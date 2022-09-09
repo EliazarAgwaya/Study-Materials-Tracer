@@ -32,7 +32,7 @@ function App() {
     })
 
     const updatedComments = [newComment, ...materialToUpdate.comments];
-    materialToUpdate.materials = updatedComments;
+    materialToUpdate.comments = updatedComments;
     setMaterials(materials.map((material) => (material.id === materialToUpdate.id ? materialToUpdate : material)));
     setComments(updatedComments)
   }
@@ -49,13 +49,13 @@ function App() {
       return material.id === deletedComment.material_id
     })
 
-    const updatedMaterial = materialToUpdate.materials.filter((material) => {
-      return material.id !==deletedComment.id
+    const updatedComment = materialToUpdate.comments.filter((comment) => {
+      return comment.id !==deletedComment.id
     })
 
-    materialToUpdate.materials = updatedMaterial;
+    materialToUpdate.comments = updatedComment;
     setMaterials(materials.map((material) =>(material.id === materialToUpdate.id ? materialToUpdate : material)))
-    setMaterials(updatedMaterial)
+    setComments(updatedComment)
   }
 
   const materialsToDisplay = materials.filter((material) => {
@@ -70,7 +70,9 @@ function App() {
           materialsToDisplay={materialsToDisplay} 
           handleLikes ={handleLikes}/>} 
           addComment ={addComment} handleDeleteComment={handleDeleteComment} 
-          comments = {comments}/>
+          comments = {comments}
+          searchTerm ={searchTerm}
+          onSearch={setSearchTerm}/>
         <Route exact path="/form" element={<Form 
           addMaterial ={addMaterial}/>} />
         <Route exact path="/" element={<Home/>} />
