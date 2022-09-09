@@ -10,7 +10,7 @@ import { Route, Routes } from "react-router-dom";
 function App() {
 
   const [materials, setMaterials] =useState([]);
-  const [comments, setComments] = useState([])
+  // const [comments, setComments] = useState([])
   const [searchTerm, setSearchTerm] = useState("");
 
   useEffect(() => {

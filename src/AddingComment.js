@@ -14,7 +14,20 @@ function AddingComment ({addComment, material}) {
       };
     return(
         <div>
+          <form>
+            <h5>Add a comment here: </h5>
 
+            <textarea
+            type="text"
+            placeholder="Enter Comment"
+            name="text"
+            value={newComment.text}
+            onChange={handleChange}
+            ></textarea>
+
+            <br />
+            <input type="submit" />
+           </form>
         </div>
     )
 }
