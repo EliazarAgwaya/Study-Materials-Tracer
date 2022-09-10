@@ -19,3 +19,18 @@ hr {
 .button :hover{
   background-color: aqua;
 }
+.navbar {
+  margin: 0px;
+  position: fixed;
+  top: 0px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  overflow: visible;
+  height: 90px;
+  background-color: #c8d3f1;
+
+  padding: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
