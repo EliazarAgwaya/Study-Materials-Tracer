@@ -54,7 +54,8 @@ function App() {
     })
 
     materialToUpdate.comments = updatedComment;
-    setMaterials(materials.map((material) =>(material.id === materialToUpdate.id ? materialToUpdate : material)))
+    setMaterials(
+      materials.map((material) =>(material.id === materialToUpdate.id ? materialToUpdate : material)));
     setComments(updatedComment)
   }
 
@@ -69,7 +70,8 @@ function App() {
           materials ={materials}
           materialsToDisplay={materialsToDisplay} 
           handleLikes ={handleLikes}/>} 
-          addComment ={addComment} handleDeleteComment={handleDeleteComment} 
+          addComment ={addComment}
+          handleDeleteComment={handleDeleteComment} 
           comments = {comments}
           searchTerm ={searchTerm}
           onSearch={setSearchTerm}/>

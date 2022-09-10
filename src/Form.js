@@ -61,7 +61,7 @@ import React,{useState} from "react"
                 ></input>
                 <br />
 
-                <input type="submit" />
+                <input className="button" type="submit" />
             </form>
         </div>
     )

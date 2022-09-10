@@ -29,9 +29,7 @@ function EachMaterial ({material, addComment, handleDeleteComment, handleLikes})
     function deleteComment(id) {
       fetch(`http://localhost:9292/comments/${id}`, {
         method: "DELETE",
-        headers: {
-          "Content-Type": "application/json"
-        },
+        headers: { "Content-Type": "application/json" },
       })
         .then((res) => res.json())
         .then((data) => handleDeleteComment(data));
@@ -51,11 +49,11 @@ function EachMaterial ({material, addComment, handleDeleteComment, handleLikes})
         <h3>Name: {material.name}</h3>
         <h5>Source: {material.source}</h5>
 
-        <button onClick={updateLikes}>
+        <button className="button" onClick={updateLikes}>
           Likes: {material.likes}
         </button>
 
-        <button onClick={showComment}>
+        <button className="button" onClick={showComment}>
           {displayComment ? "Hide Comments" : "Show Comments"}
         </button>
 

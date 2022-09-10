@@ -26,7 +26,7 @@ function AddingComment ({addComment, material}) {
             ></textarea>
 
             <br />
-            <input type="submit" />
+            <input className="button" type="submit" />
            </form>
         </div>
     )

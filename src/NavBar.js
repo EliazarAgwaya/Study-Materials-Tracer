@@ -5,15 +5,15 @@ function NavBar (){
     return(
         <div>
             <NavLink to="/">
-                <button>Home</button>
+                <button className="button">Home</button>
             </NavLink>
 
             <NavLink to="/materials">
-                <button>Materials</button>
+                <button className="button">Materials</button>
             </NavLink>
 
             <NavLink to="/form">
-                <button>Add new material</button>
+                <button className="button">Add new material</button>
             </NavLink>
             
         </div>
