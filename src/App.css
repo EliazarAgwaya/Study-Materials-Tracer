@@ -17,7 +17,7 @@ hr {
   cursor: pointer;
 }
 .button:hover{
-  background-color: aqua;
+  background-color: white;
 }
 .navbar {
   margin: 0px;
@@ -71,4 +71,20 @@ textarea {
 .material:hover {
   background-color: rgb(238, 241, 255);
   box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.8);
+}
+
+.delete {
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  justify-self: auto;
+  margin-right: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.delete:hover{
+  background-color: rgb(253, 109, 109);
+}
+.list {
+  list-style-type: none;
 }

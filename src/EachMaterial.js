@@ -36,9 +36,9 @@ function EachMaterial ({material, addComment, handleDeleteComment, handleLikes})
     }
 
     const eachComment = material.comments?.map((comment) => (
-        <li key={material.id}>
+        <li className="list" key={material.id}>
           {/* <br /> */}
-          <button onClick={() => deleteComment(comment.id)}>
+          <button className="delete" onClick={() => deleteComment(comment.id)}>
             ✖{" "}
           </button>
           {comment.text}
