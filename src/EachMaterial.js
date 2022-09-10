@@ -45,7 +45,7 @@ function EachMaterial ({material, addComment, handleDeleteComment, handleLikes})
         </li>
       ));
     return (
-        <div>
+        <div className="material">
         <h3>Name: {material.name}</h3>
         <h5>Source: {material.source}</h5>
 
