@@ -20,10 +20,24 @@ function AddingComment ({addComment, material}) {
           text: newComment.text,
           material_id: newComment.material_id
         };
+
+        fetch (`http://localhost:9292/materials/${material.id}/comments`, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(addNewComment),
+        })
+          .then((res) => res.json())
+          .then((data) => addComment(data))
+        setNewComment({
+          text: "",
+          material_id: newComment.material_id,
+        });
       }
     return(
         <div>
-          <form>
+          <form onSubmit={handleSubmit}>
             <h5>Add a comment here: </h5>
 
             <textarea
