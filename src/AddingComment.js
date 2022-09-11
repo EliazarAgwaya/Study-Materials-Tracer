@@ -12,6 +12,15 @@ function AddingComment ({addComment, material}) {
     
         setNewComment({ ...newComment, [name]: value });
       };
+
+      function handleSubmit(event) {
+        event.preventDefault();
+
+        const addNewComment = {
+          text: newComment.text,
+          material_id: newComment.material_id
+        };
+      }
     return(
         <div>
           <form>

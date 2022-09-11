@@ -28,11 +28,14 @@ hr {
   width: 100%;
   text-align: center;
   overflow: visible;
-  height: 90px;
-  background-color: #c8d3f1;
+  height: 95px;
+  background-color: #334b8d;
 
   padding: 0px;
   font-family: Arial, Helvetica, sans-serif;
+}
+.links{
+  padding: 15px;
 }
 body {
   background-color: white;
@@ -42,7 +45,7 @@ body {
   color: #1b1d0c;
   text-align: center;
   border-style: solid;
-  border-color: rgb(233, 14, 160);
+  border-color: #1450f3;
   border-width: 6px;
   margin: 70px;
   margin-bottom: 15px;
@@ -65,8 +68,8 @@ textarea {
   height: 100%;
   text-align: center;
   margin: auto;
-  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2);
-  background-color: rgb(255, 255, 255);
+  box-shadow: 5px 8px 8px 5px rgba(0, 0, 0, 0.2);
+  background-color: rgba(186, 229, 253, 0.849);
 }
 .material:hover {
   background-color: rgb(238, 241, 255);

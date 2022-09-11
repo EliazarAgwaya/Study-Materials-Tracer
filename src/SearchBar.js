@@ -1,6 +1,6 @@
 import React from "react"
 
-function SearchBar ({searchTerm, onSearch}){
+function SearchBar ({searchTerm, handleSearch}){
     return(
         <div>
             <input
@@ -8,7 +8,7 @@ function SearchBar ({searchTerm, onSearch}){
                 id="search"
                 value={searchTerm}
                 placeholder="The material you want"
-                onChange={(event) => onSearch(event.target.value)}/>
+                onChange={(event) => handleSearch(event.target.value)}/>
         </div>
     )
 }
