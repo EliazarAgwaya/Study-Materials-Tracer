@@ -1,9 +1,9 @@
 import React,{useState} from "react"
-// import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
  function Form (addMaterial){
 
-    // let history = useHistory();
+    let navigate = useNavigate();
     const [newMaterial, setNewMaterial] = useState({
         name: "",
         source: "",
@@ -37,7 +37,7 @@ import React,{useState} from "react"
                 source: "",
                 likes: 0,
             });
-            // history.push("/materials")
+            navigate.push("/materials")
       }
     return(
         <div>

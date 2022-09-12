@@ -35,8 +35,8 @@ function EachMaterial ({material, addComment, handleDeleteComment, handleLikes})
         .then((data) => handleDeleteComment(data));
     }
 
-    const eachComment = material.comments?.map((comment) => (
-        <li className="list" key={material.id}>
+    const eachComment = material.comments?.map((comment,index) => (
+        <li className="list" key={index}>
           {/* <br /> */}
           <button className="delete" onClick={() => deleteComment(comment.id)}>
             ✖{" "}

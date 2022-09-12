@@ -4,6 +4,7 @@ import Materials from './Materials';
 import Form from './Form';
 import NavBar from './NavBar';
 import Home from './Home';
+import Login from "./Login";
 import { Route, Routes } from "react-router-dom";
 
 
@@ -11,6 +12,7 @@ function App() {
 
   const [materials, setMaterials] =useState([]);
   const [comments, setComments] = useState([])
+  const [currentUser, setCurrentUser] = useState(null)
   const [searchTerm, setSearchTerm] = useState("");
 
   useEffect(() => {
@@ -20,6 +22,10 @@ function App() {
         setMaterials(data)
       })
   },[]);
+
+  const changeUser = (user) => {
+    setCurrentUser(user)
+  }
 
   function addMaterial (newMaterial) {
     const updatedMaterials = [newMaterial, ...materials]
@@ -61,7 +67,7 @@ function App() {
   }
 
   const materialsToDisplay = materials.filter((material) => {
-    return material.name
+    return material.name.toLowerCase().includes(searchTerm.toLowerCase())
   });
   return (
     <div className="App">
@@ -74,9 +80,10 @@ function App() {
           handleDeleteComment={handleDeleteComment} 
           comments = {comments}
           searchTerm ={searchTerm}
-          handleSearch={setSearchTerm}/>}/>
+          onSearch={setSearchTerm}/>}/>
         <Route exact path="/form" element={<Form 
           addMaterial ={addMaterial}/>} />
+        <Route exact path="/login" element={<Login changeUser={changeUser}/>} />
         <Route exact path="/" element={<Home/>} />
       </Routes>
     </div>
