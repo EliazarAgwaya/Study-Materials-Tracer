@@ -13,7 +13,7 @@ function Materials ({materialsToDisplay, addComment, handleDeleteComment, commen
     
     return(
         <div>
-            <h5>Search here by book title to find a book you are looking for:</h5>
+            <h5>Search for a material by name:</h5>
             <SearchBar searchTerm = {searchTerm} onSearch ={onSearch}/>
 
             <u>
