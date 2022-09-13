@@ -49,7 +49,7 @@ function AddingComment ({addComment, material}) {
             ></textarea>
 
             <br />
-            <input className="button" type="submit" />
+            <input id="like" className="button" type="submit" />
            </form>
         </div>
     )

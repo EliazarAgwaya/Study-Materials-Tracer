@@ -49,11 +49,11 @@ function EachMaterial ({material, addComment, handleDeleteComment, handleLikes})
           <h3>Name: {material.name}</h3>
           <h5>Source: {material.source}</h5>
 
-        <button className="button" onClick={updateLikes}>
+        <button id="like" className="button" onClick={updateLikes}>
           Likes: {material.likes}
         </button>
 
-        <button className="button" onClick={showComment}>
+        <button id="like" className="button" onClick={showComment}>
           {displayComment ? "Hide Comments" : "Show Comments"}
         </button>
 

@@ -11,11 +11,11 @@ function Home (){
                 <img src="https://img.freepik.com/free-photo/concept-back-school-teacher-s-day-idea-pens-pencils-books-alarm-clock-laptop-table-against-background-gray-board-back-school-with-copy-space_166373-2804.jpg?w=1380&t=st=1663045343~exp=1663045943~hmac=d0914f345f6a816c5d7a9c8e3598c5c0de3a7acfd574919ed18a6fb6f8562df9" alt="Study materials"/>
             </div>
             <div className="intro">
-                <h1>Study Material Tracer</h1>
+                <h1 id="tracer">Study Material Tracer</h1>
                 <p>Welcome to the study material tracer app! This application enables one to keep track of the study materials one wants to use or have used. It's therefore a home for everyone since learning has no end. There is ability to add the study materials you've used, or
             would like to. You can add comments and also delete them, one can also like the materials based on how
             you liked them!</p>
-            <h6>Feel free to add your material here, add comments and also delete them at will</h6>
+            <h6 id="feel">Feel free to add your material here, add comments and also delete them at will</h6>
             </div>
         </div>
     )

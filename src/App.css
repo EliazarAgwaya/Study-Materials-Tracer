@@ -121,35 +121,65 @@ textarea {
   body{
     padding-top: 70px;
   }
+  #feel{
+    font-size: 20px;
+  }
 }
 @media only screen and (max-width: 1800px){
   .home > .images >img{
     height: 170px;
+  }
+  #feel{
+    font-size: 28px;
   }
 }
 @media only screen and (max-width: 1590px){
   .home > .images >img{
     height: 130px;
   }
+  #feel{
+    font-size: 26px;
+  }
 }
 @media only screen and (max-width: 1270px){
   .home > .images >img{
     height: 110px;
+  }
+  #feel{
+    font-size: 24px;
   }
 }
 @media only screen and (max-width: 1100px){
   .home > .images >img{
     height: 80px;
   }
+  #feel{
+    font-size: 22px;
+  }
 }
 @media only screen and (max-width: 880px){
   .home > .images >img{
     height: 50px;
   }
+  #like{
+    font-size: 10px;
+  }
+  #feel{
+    font-size: 19px;
+  }
 }
 @media only screen and (max-width: 645px){
   .home > .images >img{
     height: 40px;
+  }
+  #like{
+    font-size:8px;
+  }
+  .intro > h1{
+    font-size: 28px;
+  }
+  .intro >p{
+    font-size: 18px;
   }
 }
 @media only screen and (max-width: 560px){
@@ -157,11 +187,32 @@ textarea {
     height: 30px;
     border-radius: 20px;
   }
+  #like{
+    font-size: 6px;
+  }
+  .intro > h1{
+    font-size: 26px;
+  }
+  .intro >p{
+    font-size: 18px;
+  }
 }
 @media only screen and (max-width: 470px){
   .home > .images >img{
     height: 20px;
     border-radius: 16px;
+  }
+  #like{
+    font-size: 5px;
+  }
+  textarea{
+    width: 100px;
+  }
+  .intro > h1{
+    font-size: 24px;
+  }
+  .intro >p{
+    font-size: 16px;
   }
 }
 @media only screen and (max-width: 400px){
@@ -169,16 +220,47 @@ textarea {
     height: 15px;
     border-radius: 14px;
   }
+  #like{
+    font-size: 4px;
+  }
+  #feel{
+    font-size: 14px;
+  }
+  textarea{
+    width: 80px;
+  }
+  .intro > h1{
+    font-size: 20px;
+  }
+  .intro >p{
+    font-size: 14px;
+  }
 }
 @media only screen and (max-width: 350px){
   .home > .images >img{
     height: 10px;
+    padding: 5px;
     border-radius: 10px;
+  }
+  #like{
+    font-size: 3px;
+  }
+  textarea{
+    width: 60px;
+  }
+  #add{
+    font-size: 14px;
   }
 }
 @media only screen and (max-width: 312px){
   .home > .images >img{
     height: 7px;
+  }
+  #like{
+    font-size: 2px;
+  }
+  textarea{
+    width: 55px;
   }
 }
 @media only screen and (max-width: 580px){
@@ -187,7 +269,16 @@ textarea {
   }
 }
 @media only screen and (max-width: 360px){
-  body{
+  /* body{
+    font-size: 13px;
+  } */
+  .intro > h1{
+    font-size: 15px;
+  }
+  .intro >p{
+    font-size: 10px;
+  }
+  .into{
     font-size: 10px;
   }
 }
@@ -196,8 +287,8 @@ textarea {
     font-size: 3px;
   }
   .button{
-    width: 140px;
-    height: 50px;
+    width: 90px;
+    height: 35px;
     margin: 1px;
   }
 }
@@ -208,6 +299,22 @@ textarea {
 }
 @media only screen and (max-width: 292px){
   .home > .images >img{
-    height: 4px;
+    height: 6px;
+  }
+}
+@media only screen and (max-width: 350px){
+  .material >h3{
+    font-size: 15px;
+  }
+  .material >h5{
+    font-size: 10px;
+  }
+}
+@media only screen and (max-width: 280px){
+  .material >h3{
+    font-size: 10px;
+  }
+  .material >h5{
+    font-size: 6px;
   }
 }

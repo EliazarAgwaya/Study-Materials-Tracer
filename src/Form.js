@@ -42,7 +42,7 @@ import { useNavigate } from "react-router-dom";
     return(
         <div>
             <form onSubmit={handleSubmit}>
-                <h4>Add a new material here: </h4>
+                <h4 id="add">Add a new material here: </h4>
 
                 <input
                 type="text"
@@ -61,7 +61,7 @@ import { useNavigate } from "react-router-dom";
                 ></input>
                 <br />
 
-                <input className="button" type="submit" />
+                <input id="like" className="button" type="submit" />
             </form>
         </div>
     )
