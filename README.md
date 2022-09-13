@@ -21,6 +21,8 @@ This application has an easy to use landing page showing the navigation bar whic
 
 ## Live link
 
+https://study-materials-tracer.vercel.app/
+
 ## Technologies Used
 
 - I used React for frontend
