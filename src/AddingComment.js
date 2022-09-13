@@ -38,7 +38,7 @@ function AddingComment ({addComment, material}) {
     return(
         <div>
           <form onSubmit={handleSubmit}>
-            <h5>Add a comment here: </h5>
+            <h5 id="comm">Add a comment here: </h5>
 
             <textarea
             type="text"

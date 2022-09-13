@@ -175,6 +175,9 @@ textarea {
   #like{
     font-size:8px;
   }
+  .navbar{
+    padding: 1px;
+  }
   .intro > h1{
     font-size: 28px;
   }
@@ -188,7 +191,8 @@ textarea {
     border-radius: 20px;
   }
   #like{
-    font-size: 6px;
+    font-size: 12px;
+    width: 75px;
   }
   .intro > h1{
     font-size: 26px;
@@ -203,7 +207,8 @@ textarea {
     border-radius: 16px;
   }
   #like{
-    font-size: 5px;
+    font-size: 10px;
+    width: 65px;
   }
   textarea{
     width: 100px;
@@ -221,7 +226,8 @@ textarea {
     border-radius: 14px;
   }
   #like{
-    font-size: 4px;
+    font-size: 9px;
+    width: 60px;
   }
   #feel{
     font-size: 14px;
@@ -242,8 +248,18 @@ textarea {
     padding: 5px;
     border-radius: 10px;
   }
+  #search{
+    font-size: 12px;
+  }
+  #comm{
+    font-size: 8px;
+  }
+  #samples{
+    font-size: 20px;
+  }
   #like{
-    font-size: 3px;
+    font-size: 8px;
+    width: 54px;
   }
   textarea{
     width: 60px;
@@ -251,13 +267,22 @@ textarea {
   #add{
     font-size: 14px;
   }
+  .navbar{
+    height: 100px;
+  }
+}
+@media only screen and (max-width: 213px){
+  .navbar{
+    height: 175px;
+  }
 }
 @media only screen and (max-width: 312px){
   .home > .images >img{
     height: 7px;
   }
   #like{
-    font-size: 2px;
+    font-size: 7px;
+    width: 50px;
   }
   textarea{
     width: 55px;
