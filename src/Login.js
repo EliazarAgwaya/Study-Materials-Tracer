@@ -21,14 +21,14 @@ function Login ({changeUser}) {
      }
      return (
         <div>
-          <form onSubmit={handleSubmit}>
+          <form className="form" onSubmit={handleSubmit}>
             <div className="login">
-              <label htmlFor="login" value="Username">Username:   </label><br/>
+              <label id="label" htmlFor="login" value="Username">Username:   </label><br/>
               <input type="text" id="login" name="login" value={userLogin} onChange={handleChange} autoFocus={true}/><br/><br/>
 
-              <label htmlFor="email">Email:   </label><br/>
+              <label id="label" htmlFor="email">Email:   </label><br/>
               <input type="text" id=" email" name="login" value={userLogin} onChange={handleChange} autoFocus={true}/><br/><br/>
-              <input type="submit" value="Login"/>
+              <input type="submit" className="button" value="Login"/>
             </div>
           </form>
         </div>

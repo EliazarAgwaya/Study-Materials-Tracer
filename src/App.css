@@ -248,6 +248,9 @@ textarea {
     padding: 5px;
     border-radius: 10px;
   }
+  #label{
+    font-size: 12px;
+  }
   #search{
     font-size: 12px;
   }
