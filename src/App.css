@@ -157,3 +157,53 @@ textarea {
     height: 30px;
   }
 }
+@media only screen and (max-width: 470px){
+  .home > .images >img{
+    height: 20px;
+  }
+}
+@media only screen and (max-width: 400px){
+  .home > .images >img{
+    height: 15px;
+  }
+}
+@media only screen and (max-width: 350px){
+  .home > .images >img{
+    height: 10px;
+  }
+}
+@media only screen and (max-width: 312px){
+  .home > .images >img{
+    height: 7px;
+  }
+}
+@media only screen and (max-width: 580px){
+  body{
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 360px){
+  body{
+    font-size: 10px;
+  }
+}
+@media only screen and (max-width: 345px){
+  body{
+    font-size: 3px;
+  }
+  .button{
+    width: 140px;
+    height: 50px;
+    margin: 1px;
+  }
+}
+@media only screen and (max-width: 315px){
+  body{
+    padding-top: 100px;
+  }
+}
+@media only screen and (max-width: 292px){
+  .home > .images >img{
+    height: 4px;
+  }
+}
