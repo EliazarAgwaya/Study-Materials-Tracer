@@ -254,6 +254,9 @@ textarea {
   #search{
     font-size: 12px;
   }
+  .list{
+    font-size: 12px;
+  }
   #comm{
     font-size: 8px;
   }
@@ -290,6 +293,10 @@ textarea {
   textarea{
     width: 55px;
   }
+  .list{
+    font-size: 8px;
+  }
+  
 }
 @media only screen and (max-width: 580px){
   body{
