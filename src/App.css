@@ -114,11 +114,46 @@ textarea {
   list-style-type: none;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1049px) {
   .navbar {
     height: 150px;
   }
   body{
     padding-top: 70px;
+  }
+}
+@media only screen and (max-width: 1800px){
+  .home > .images >img{
+    height: 170px;
+  }
+}
+@media only screen and (max-width: 1590px){
+  .home > .images >img{
+    height: 130px;
+  }
+}
+@media only screen and (max-width: 1270px){
+  .home > .images >img{
+    height: 110px;
+  }
+}
+@media only screen and (max-width: 1100px){
+  .home > .images >img{
+    height: 80px;
+  }
+}
+@media only screen and (max-width: 880px){
+  .home > .images >img{
+    height: 50px;
+  }
+}
+@media only screen and (max-width: 645px){
+  .home > .images >img{
+    height: 40px;
+  }
+}
+@media only screen and (max-width: 560px){
+  .home > .images >img{
+    height: 30px;
   }
 }
