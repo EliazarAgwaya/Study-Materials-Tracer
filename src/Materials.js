@@ -17,7 +17,7 @@ function Materials ({materialsToDisplay, addComment, handleDeleteComment, commen
             <SearchBar searchTerm = {searchTerm} onSearch ={onSearch}/>
 
             <u>
-                <h1>Study Materials</h1>
+                <h1>Materials</h1>
             </u>
             {materialList}
         </div>

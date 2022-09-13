@@ -46,8 +46,8 @@ function EachMaterial ({material, addComment, handleDeleteComment, handleLikes})
       ));
     return (
         <div className="material">
-        <h3>Name: {material.name}</h3>
-        <h5>Source: {material.source}</h5>
+          <h3>Name: {material.name}</h3>
+          <h5>Source: {material.source}</h5>
 
         <button className="button" onClick={updateLikes}>
           Likes: {material.likes}

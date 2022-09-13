@@ -6,6 +6,19 @@ hr {
   border: 1px solid;
   color: #1c3885;
 }
+.home > .images{
+  display: flex;
+  justify-content: center;
+}
+.home > .images >img{
+  height: 200px;
+  padding: 10px;
+  padding-top: 50px;
+  border-radius: 30px;
+}
+.intro > p{
+  font-size: 35px;
+}
 
 .button {
   margin: 10px;
@@ -54,6 +67,7 @@ body {
   border-width: 6px;
   margin: 70px;
   margin-bottom: 15px;
+  padding-top: 20px;
 }
 input {
   width: 40%;
@@ -75,7 +89,10 @@ textarea {
   margin: auto;
   box-shadow: 5px 8px 8px 5px rgba(0, 0, 0, 0.2);
   background-color: rgba(186, 229, 253, 0.849);
+  padding: 1px;
+  margin-bottom: 50px;
 }
+
 .material:hover {
   background-color: rgb(238, 241, 255);
   box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.8);
@@ -95,4 +112,13 @@ textarea {
 }
 .list {
   list-style-type: none;
+}
+
+@media only screen and (max-width: 1000px) {
+  .navbar {
+    height: 150px;
+  }
+  body{
+    padding-top: 70px;
+  }
 }
