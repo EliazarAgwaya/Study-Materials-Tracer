@@ -6,7 +6,7 @@ function Login ({changeUser}) {
     const navigate = useNavigate()
 
     async function findCurrentUser(username) {
-        const response = await fetch(`http://localhost:9292/users/${username}`)
+        const response = await fetch(`https://study-material-tracer-backend.herokuapp.com/users/${username}`)
         const user = await response.json()
         changeUser(user)
         navigate.push(`/users/${user.id}/materials`)

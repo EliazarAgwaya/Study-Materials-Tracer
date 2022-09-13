@@ -15,7 +15,7 @@ This application has an easy to use landing page showing the navigation bar whic
 
 ## Setup/Installation Requirements
 
-- Clone the repo git clone https://github.com/EliazarAgwaya/Study-Materials-Tracer
+- Clone the repo git clone https://github.com/EliazarAgwaya/Study-Materials-Tracer for the frontend and https://github.com/EliazarAgwaya/phase-3-sinatra-react-project for the backend
 - Unzip the downloaded files in a folder of choice.
 - Open the index file from the zipped file with any browser.
 

@@ -21,7 +21,7 @@ function AddingComment ({addComment, material}) {
           material_id: newComment.material_id
         };
 
-        fetch (`http://localhost:9292/materials/${material.id}/comments`, {
+        fetch (`https://study-material-tracer-backend.herokuapp.com/materials/${material.id}/comments`, {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

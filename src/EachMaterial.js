@@ -10,7 +10,7 @@ function EachMaterial ({material, addComment, handleDeleteComment, handleLikes})
         likes: material.likes + 1,
       };
 
-      fetch(`http://localhost:9292/materials/${material.id}`, {
+      fetch(`https://study-material-tracer-backend.herokuapp.com/materials/${material.id}`, {
         method: "PATCH",
         headers: {
           "Content-Type": "application/json"
@@ -27,7 +27,7 @@ function EachMaterial ({material, addComment, handleDeleteComment, handleLikes})
     }
 
     function deleteComment(id) {
-      fetch(`http://localhost:9292/comments/${id}`, {
+      fetch(`https://study-material-tracer-backend.herokuapp.com/comments/${id}`, {
         method: "DELETE",
         headers: { "Content-Type": "application/json" },
       })

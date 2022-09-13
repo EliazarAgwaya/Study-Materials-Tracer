@@ -23,7 +23,7 @@ import { useNavigate } from "react-router-dom";
             source: newMaterial.source,
             likes: 0,
         }
-        fetch("http://localhost:9292/materials", {
+        fetch("https://study-material-tracer-backend.herokuapp.com/materials", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

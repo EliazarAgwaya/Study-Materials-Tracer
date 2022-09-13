@@ -16,7 +16,7 @@ function App() {
   const [searchTerm, setSearchTerm] = useState("");
 
   useEffect(() => {
-    fetch("http://localhost:9292/materials")
+    fetch("https://study-material-tracer-backend.herokuapp.com/materials")
       .then((res) => res.json())
       .then((data) => {
         setMaterials(data)
