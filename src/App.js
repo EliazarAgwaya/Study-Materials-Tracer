@@ -67,7 +67,7 @@ function App() {
   }
 
   const materialsToDisplay = materials.filter((material) => {
-    return material.name.toLowerCase().includes(searchTerm.toLowerCase())
+    return material.name.toLowerCase().includes(searchTerm.toLowerCase()) || material.source.toLowerCase().includes(searchTerm.toLowerCase())
   });
   return (
     <div className="App">
